@@ -27,7 +27,12 @@ stylesheet
 - HTML and CSS
 - Youtube and Twitch API's
 
-## Lessons from project
+## Lessons from Project
 
 - I learn how to implement python flask and integrate it with html
 - I discovered how to implement youtube and twitch APIs
+
+
+## Additional Info
+
+- The report we have made for this app can be found
