@@ -1,7 +1,7 @@
 # LiveStreamApp
 
-![Billing](https://user-images.githubusercontent.com/37048222/89929527-ecc06880-dbce-11ea-8c76-20f3041a9b70.PNG)
 ![FrontPage](https://user-images.githubusercontent.com/37048222/89929537-f053ef80-dbce-11ea-953b-13811b963d62.PNG)
+![Billing](https://user-images.githubusercontent.com/37048222/89929527-ecc06880-dbce-11ea-8c76-20f3041a9b70.PNG)
 ![MainAppPage](https://user-images.githubusercontent.com/37048222/89929557-f649d080-dbce-11ea-9c3a-fccd066eba4e.PNG)
 
 ## Description
