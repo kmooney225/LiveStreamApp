@@ -35,4 +35,5 @@ stylesheet
 
 ## Additional Info
 
-- The report we have made for this app can be found
+- The report we have made for this app can be found outside of the 
+live chat folder
