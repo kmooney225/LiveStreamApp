@@ -1,0 +1,35 @@
+.container {
+    background-color : #81A0B8;
+    /* border: 10px 10px 10px 10px; */
+    box-sizing: content-box;
+    justify-items: center;
+    text-align: center;
+    color: black;
+    
+}
+.navbar-right {
+    justify-content: right;
+    justify-items:right;
+}
+
+.jumbotron {
+    background-color :  #063C65;  
+    font-style: italic;
+    color: white;
+}
+label {
+    padding-left: 10px;
+}
+
+input {
+    text-align: left;
+    padding-left: 10px;
+}
+td {
+    padding: 5px;
+}
+.small-input{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}

@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- <div class="jumbotron"> -->
+  <div class="container">
+    <h2>Sign up to be the member</h2><br>
+    <div class="label" style=" color: black;">
+      <p>The password should meet the following requirements:</p>
+      <ul>
+        <li>It must contain a uppercase and lowercase letter</li>
+        <li>Password should be at least 8 characters</li>
+      </ul>
+      <h4 >{{result}}</h4>
+      <!-- the following lines were derived from this post: https://stackoverflow.com/questions/15962805/creating-an-ordered-list-out-of-a-python-list-item -->
+      <ul>
+        {% for item in details %}
+        <li>
+            {{item}}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <h3 style = "color:red">{{warning}}</h3>
+      <form action="{{url_for('report')}}" >
+        <label for="first">First Name: </label>
+        <input type="text" name="firstName" value="">
+        <br>
+
+        <label for="last">Last Name: </label>
+        <input type="text" name="lastName" value="">
+        <br>
+        <br>
+        <label for="email"> Email addrs: </label>
+        <input type="text" name="email" value="">
+        <br>
+        <br>
+
+        <label for="pwd">Password   :</label>
+        <input type="password" name="pwd1" value="">
+        <br>
+
+        <label for="pwd">Re-enter Password: </label>
+        <input type="password" name="pwd2" value=""><br>
+
+        <input  class = "btn bg-primary" type="submit" value=" Submit Form  ">
+
+      </form>
+  </div>
+
+
+{% endblock %}

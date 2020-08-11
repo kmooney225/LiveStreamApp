@@ -1,0 +1,48 @@
+
+{% extends "base.html" %}
+{% block content %}
+<div >
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="col-lg-5 col-12">
+                <div class="w3-card-4" style="height: 360px;">
+
+                    <header class="w3-container w3-light-grey">
+                      <h3>Free Plan</h3>
+                    </header>
+                    
+                    <div class="w3-container" style="padding-bottom: 50px;">
+                      <h4 style="text-align: center; padding-top: 20px;"><b>$0/monthy</b></h4>
+                      <hr>
+                      <p style="padding-top: 30px; padding-bottom: 30px;">Free data access and storage</p>
+                    </div>
+                    <form action="/payment">
+                    <button style="height:35px;" class="btn btn-group w3-block bg-success"  name="planid" value="free" readonly="true">Eligible</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5 col-12">
+                <div class="w3-card-4" style="height: 360px;">
+
+                    <header class="w3-container w3-light-grey">
+                      <h3>Premium Plan</h3>
+                    </header>
+                    
+                    <div class="w3-container">
+                      <h4 style="text-align: center; padding-top: 20px;"><b>$20/monthy</b><br><b> Premuium plan </b></h4>
+                      <hr>
+                      <p style="padding-top: 30px; padding-bottom: 30px;">Unlimited data and unlimited storage capacity.Earn 100 bit coins every month by referring a new user</p>
+                    </div>
+                    <form action="/payment">
+                    <button class="btn btn-group w3-block bg-primary" style="height:35px;"  name="planid" value="premium" type="submit">Select Plan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

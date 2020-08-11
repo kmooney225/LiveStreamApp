@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Welcome {{name}} </h1>
+  <h4>Your multi-platform chats  are below</h4>
+<div class="jumbotron">
+  <div class="container">
+    <table style="color: black;">
+      <tr>
+        <th>Video</th><th style="text-align:center;">YouTube Chat</th><th style="text-align:center;">Twitch Chat</th>
+      </tr>
+      <tr>
+        <!-- YouTube Video -->
+        <td><iframe width="400" height="315" src="https://www.youtube.com/embed/{{ytlink}}" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </td>
+        <!-- YouTube chat -->
+        <td><iframe width="310" height="315" src="https://www.youtube.com/live_chat?v={{ytlink}}&embed_domain=127.0.0.1" frameborder="0" ></iframe>
+        </td>
+        <!-- Twitch chat -->
+        <td>
+          <iframe frameborder="0"
+                  scrolling="no"
+                  id="chat_embed"
+                  src="https://www.twitch.tv/embed/{{t_link}}/chat?parent=127.0.0.1"
+                  title="Twitch Chat"
+                  height="315"
+                  width="310">
+          </iframe>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <h2 style = "color:red">{{warning}}</h2>
+
+</div>
+
+{% endblock %}

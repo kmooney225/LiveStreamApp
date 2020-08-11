@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <h3>Please fill in your credit card details</h3>
+  <h4>Your have choosen the {{planid}} plan</h4>
+  <h5>Note: We are not making any direct payement at this time so please enter an invalid credit card</h5>
+  <h5 style = "color:red">{{warning}}</h5>
+ 
+  <form action="{{url_for('chat')}}" >
+    <div class="input-fields">
+      <label for="cardholder">Cardholder's Name : </label>
+      <input type="text" id="cardholder"/><br>
+
+      <label for="cardnumber">Card Number :</label>
+      <input type="password" id="cardnumber"/><br> 
+      <!-- <div  class="small-input">      -->
+        <label for="date">Valid thru :</label>
+        <input type="date" id="date" /><br>
+        
+        <label for="verification">CVV / CVC *</label>
+        <input type="password" id="verification"  disabled><br>
+        <label for="Price"> Plan Price : </label>
+        <label for= "price" > {{price}}</label><br>
+        <button class="btn btn-group bg-success"  value="Submit" >Make Payment</button>    
+      <!-- </div> -->
+    </div>
+  </form>
+
+</div>
+
+{% endblock %}

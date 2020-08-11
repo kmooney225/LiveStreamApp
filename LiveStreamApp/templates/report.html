@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="jumbotron">
+  <h1>Thank you {{name}}, let's see if your password meets the requirements</h1>
+  <h2>{{result}}</h2>
+
+  <!-- the following lines were derived from this post: https://stackoverflow.com/questions/15962805/creating-an-ordered-list-out-of-a-python-list-item -->
+  <ul>
+    {% for item in details %}
+    <li>
+      {{item}}
+    </li>
+    {% endfor %}
+  </ul>
+
+  <h2 style = "color:red">{{warning}}</h2>
+
+
+</div>
+
+{% endblock %}

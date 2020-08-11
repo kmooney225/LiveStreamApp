@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <h3>Login Form</h3>
+
+  <h4 style = "color:red">{{warning}}</h4>
+
+  <form action="{{url_for('signin')}}" >
+    <label for="email">Email: </label>
+    <input type="text" name="email" value="">
+    <br>
+
+    <label for="last">Password: </label>
+    <input type="password" name="pwd" value="">
+    <br>
+    <input class="btn  bg-primary"  type="submit" value="Login">
+  </form>
+  <p>Not a Member Yet? <a class="btn btn-link" href="{{url_for('signup')}}">Create an Account</a></p>
+
+</div>
+
+{% endblock %}
+ 

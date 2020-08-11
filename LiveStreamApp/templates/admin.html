@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+  <h3>Please update your administrative data</h3>
+
+  <h2>{{result}}</h2>
+
+  <!-- the following lines were derived from this post: https://stackoverflow.com/questions/15962805/creating-an-ordered-list-out-of-a-python-list-item -->
+  <ul>
+    {% for item in details %}
+    <li>
+      {{item}}
+    </li>
+    {% endfor %}
+  </ul>
+
+  <h2 style = "color:red">{{warning}}</h2>
+
+  <form action="{{url_for('adminupdate')}}" >
+    <label for="yt">YouTube ID: </label>
+    <input type="text" name="yt" value={{ytlink}}>
+    <br>
+
+    <label for="twitch">Twitch ID: </label>
+    <input type="text" name="twitch" value={{t_link}}>
+    <br>
+    <br>
+
+    <input class =" btn btn-dark "type="submit" value="Add to your list">
+
+  </form>
+
+</div>
+
+{% endblock %}
